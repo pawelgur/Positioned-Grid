@@ -1,0 +1,76 @@
+
+.positioned-grid(@columns: 4, @rows: 4){
+
+	//////// Variables
+
+		@cellWidth: (100% / @columns);
+		@yOffset: (100% / @rows);
+		
+		@coordinatesCount: max(@columns, @rows);
+
+	//////// Mixins
+
+		//position x
+		.x(@x){
+			left: (@x * @cellWidth); 
+		}
+		//position y
+		.y(@y){
+			top: (@y * @yOffset);
+		}
+		//width
+		.w(@w){
+			width: (@w * @cellWidth);
+		}
+		//height
+		.h(@h){
+			padding-bottom: (@h * @cellWidth);
+		}
+
+		.generate-coordinates(@count) when (@count >= 0){
+			
+			.generate-coordinates((@count - 1));
+			
+			.x@{count}{
+				.x(@count);
+			}
+			
+			.y@{count}{
+				.y(@count);
+			}
+			
+			.w@{count}{
+				.w(@count);
+			}
+			
+			.h@{count}{
+				.h(@count);
+			}
+			
+		}
+
+	//////// Actual styles
+
+		width: 100%;
+		padding-bottom: ((@rows / @columns) * 100%);
+		overflow: hidden;
+		
+		.cell{
+			.sizing-border-box;
+			
+			display: block;
+			position: absolute;
+			width: @cellWidth;
+			padding-bottom: @cellWidth;
+			
+			.inner-content{
+				.cube;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}	
+		}
+		
+		.generate-coordinates(@coordinatesCount);	
+
+}

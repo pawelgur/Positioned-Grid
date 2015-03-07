@@ -1,0 +1,36 @@
+@import (reference) "../bower_components/pg-less-mixins/dist/_mixins.less";
+@import (reference) "../src/_positioned-grid.less"; 
+
+
+//////// Example usage
+
+.positioned-grid-4x3{
+	.positioned-grid(4, 3);	//generates 4x3 grid styles
+}
+
+
+//////// Test styles
+
+	body{
+		font-family: Arial;
+	}
+
+	.cell-colors(@index) when (@index > 0){
+		
+		.cell-colors((@index - 1));
+		
+		@x: (10 * @index);
+		
+		&:nth-child(@{index}){
+			background: rgb((0 + @x), (60 + @x), (100 + @x));
+		}
+			
+	}
+	
+	.cell{		
+		color: white;
+		.cell-colors(12);
+		.inner-content{
+			padding: 5px;
+		}
+	}

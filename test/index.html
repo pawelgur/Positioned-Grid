@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Positioned grid test page</title>
+
+    <link rel="stylesheet" href="../bower_components/pg-css-reset/dist/pg-reset.css">
+    <link rel="stylesheet" href="test.css">
+    
+  </head>
+  <body>
+
+    <br><br>
+    <h1>Base 4x3 cell positioning</h1>
+    <br><br>
+
+    <div class="positioned-grid-4x3">
+        <div class="cell x1"><div class="inner-content">x1</div></div>
+        <div class="cell x2"><div class="inner-content">x2</div></div>
+        <div class="cell x3"><div class="inner-content">x3</div></div>
+        <div class="cell x0"><div class="inner-content">x0</div></div>
+        <div class="cell x1 y1"><div class="inner-content">x1 y1</div></div>
+        <div class="cell x2 y1"><div class="inner-content">x2 y1</div></div>
+        <div class="cell x3 y1"><div class="inner-content">x3 y1</div></div>
+        <div class="cell x0 y1"><div class="inner-content">x0 y1</div></div>
+        <div class="cell x1 y2"><div class="inner-content">x1 y2</div></div>
+        <div class="cell x2 y2"><div class="inner-content">x2 y2</div></div>
+        <div class="cell x3 y2"><div class="inner-content">x3 y2</div></div>
+        <div class="cell x0 y2"><div class="inner-content">x0 y2</div></div>
+    </div>
+
+    <br><br>
+    <h1>Custom 4x3 cell positioning and sizing</h1>
+    <br><br>
+
+    <div class="positioned-grid-4x3">
+        
+        <div class="cell h2 y1">      <div class="inner-content">y1 h2</div></div>
+        <div class="cell w2 h2 x2 y1"><div class="inner-content">x2 y1 w2 h2</div></div>
+        <div class="cell x1 y1">      <div class="inner-content">x1 y1</div></div>
+        <div class="cell x1 y2">      <div class="inner-content">x1 y2</div></div>
+        <div class="cell w2 x2 y3">   <div class="inner-content">x2 y3 w2</div></div>
+        <div class="cell x1 y3">      <div class="inner-content">x1 y3</div></div>
+        <div class="cell x3">         <div class="inner-content">x3</div></div>
+        <div class="cell">            <div class="inner-content">x0 y0</div></div>
+        <div class="cell x1 y0 w2 h1"><div class="inner-content">x1 y0 w2 h1</div>
+        </div>
+     
+    </div>
+
+  </body>
+</html>

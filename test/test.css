@@ -1,0 +1,126 @@
+.positioned-grid-4x3 {
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+.positioned-grid-4x3 .cell {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 25%;
+  padding-bottom: 25%;
+}
+.positioned-grid-4x3 .cell .inner-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.positioned-grid-4x3 .x0 {
+  left: 0%;
+}
+.positioned-grid-4x3 .y0 {
+  top: 0%;
+}
+.positioned-grid-4x3 .w0 {
+  width: 0%;
+}
+.positioned-grid-4x3 .h0 {
+  padding-bottom: 0%;
+}
+.positioned-grid-4x3 .x1 {
+  left: 25%;
+}
+.positioned-grid-4x3 .y1 {
+  top: 33.33333333%;
+}
+.positioned-grid-4x3 .w1 {
+  width: 25%;
+}
+.positioned-grid-4x3 .h1 {
+  padding-bottom: 25%;
+}
+.positioned-grid-4x3 .x2 {
+  left: 50%;
+}
+.positioned-grid-4x3 .y2 {
+  top: 66.66666667%;
+}
+.positioned-grid-4x3 .w2 {
+  width: 50%;
+}
+.positioned-grid-4x3 .h2 {
+  padding-bottom: 50%;
+}
+.positioned-grid-4x3 .x3 {
+  left: 75%;
+}
+.positioned-grid-4x3 .y3 {
+  top: 100%;
+}
+.positioned-grid-4x3 .w3 {
+  width: 75%;
+}
+.positioned-grid-4x3 .h3 {
+  padding-bottom: 75%;
+}
+.positioned-grid-4x3 .x4 {
+  left: 100%;
+}
+.positioned-grid-4x3 .y4 {
+  top: 133.33333333%;
+}
+.positioned-grid-4x3 .w4 {
+  width: 100%;
+}
+.positioned-grid-4x3 .h4 {
+  padding-bottom: 100%;
+}
+body {
+  font-family: Arial;
+}
+.cell {
+  color: white;
+}
+.cell:nth-child(1) {
+  background: #0a466e;
+}
+.cell:nth-child(2) {
+  background: #145078;
+}
+.cell:nth-child(3) {
+  background: #1e5a82;
+}
+.cell:nth-child(4) {
+  background: #28648c;
+}
+.cell:nth-child(5) {
+  background: #326e96;
+}
+.cell:nth-child(6) {
+  background: #3c78a0;
+}
+.cell:nth-child(7) {
+  background: #4682aa;
+}
+.cell:nth-child(8) {
+  background: #508cb4;
+}
+.cell:nth-child(9) {
+  background: #5a96be;
+}
+.cell:nth-child(10) {
+  background: #64a0c8;
+}
+.cell:nth-child(11) {
+  background: #6eaad2;
+}
+.cell:nth-child(12) {
+  background: #78b4dc;
+}
+.cell .inner-content {
+  padding: 5px;
+}

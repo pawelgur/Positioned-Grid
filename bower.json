@@ -1,0 +1,38 @@
+{
+  "name": "pg-positioned-grid",
+  "version": "0.1.0",
+  "description": "Positioned fluid grid generating less mixin",
+  "main": "src/_positioned-grid.less",
+  "keywords": [
+    "less",
+    "mixin",
+    "css",
+    "grid",
+    "fluid",
+    "responsive"
+  ],
+  "ignore": [
+    ".gitignore",
+    "bower.json",
+    "node_modules",
+    "bower_components",
+    "Gruntfile.js",
+    "package.json",
+    "test",
+    "doc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pawelgur/positioned-grid.git"
+  },
+  "authors": [
+    "Pavel Gurecki <pawelgur@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "pg-css-reset": "~2.0.2"
+  },
+  "dependencies": {
+    "pg-less-mixins": "~1.3.0"
+  }
+}
