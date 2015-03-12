@@ -1,6 +1,6 @@
 {
   "name": "pg-positioned-grid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Positioned fluid grid generating less mixin",
   "main": "src/_positioned-grid.less",
   "keywords": [
